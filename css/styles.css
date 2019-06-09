@@ -1,0 +1,91 @@
+@font-face {
+  font-family: Blacklisted;
+  src: url("../fonts/Blacklisted.ttf");
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url("../fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: Redhat;
+    src: url("../fonts/RedHatText-Regular.otf");
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+.map-container {
+  background-color: #fff;
+  border: 3px solid #eee;
+}
+
+.content-container {
+  background-color: #eee;
+}
+
+.search-bar {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.search-bar input {
+  font-size: 1.6rem;
+}
+
+.btn-submit {
+  margin-left: 2rem;
+  font-size: 1.6rem;
+  color: #fff;
+  background: orange;
+  transition: all .3s;
+  padding: 1rem 2rem;
+}
+
+.btn-submit:hover {
+  color: #fff;
+  box-shadow: 2px 2px 3px 0 orange;
+}
+
+.filters-container ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  padding: 0;
+}
+
+.filters-container #first-filter {
+  margin: 0;
+}
+
+.filters-container .filter {
+  margin-left: 1rem;
+}
+
+.filters-container .filter a {
+  font-size: 1.6rem;
+  color: #000;
+  border: 1px solid #000;
+  padding: 0.8rem 2rem;
+  transition: all .3s
+}
+
+.filters-container .filter a:hover {
+  text-decoration: none;
+  background-color: #000;
+  color: #fff;
+}
+
+.exhibitors-table {
+  margin-top: 3rem;
+}
+
+.exhibitors-table th, .exhibitors-table td {
+  font-size: 1.6rem;
+}
