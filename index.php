@@ -9,11 +9,10 @@
         <link rel="stylesheet" type="text/css" href="css/styles.css"/>
     </head>
     <body>
-
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-6 map-container">
-            <img src="images/plan.png" class="img-fluid map"/>
+            <img src="images/plan_colors.png" class="img-fluid map"/>
           </div>
 
           <div class="col-lg-6 content-container">
@@ -22,13 +21,17 @@
               <button class="btn btn-submit" type="submit">Rechercher</button>
             </div>
 
+
+
             <div class="filters-container">
-              <ul>
-                <li class="filter" id="first-filter"><a href="#">Vêtements</a></li>
-                <li class="filter"><a href="#">Custom</a></li>
-                <li class="filter"><a href="#">Skate</a></li>
-                <li class="filter"><a href="#">Skatepark</a></li>
-              </ul>
+              <span>Filtrer par :<span>
+              <input type="submit" class="button" name="utilitaire" value="Utilitaire"/>
+              <input type="submit" class="button" name="skate" value="Skate"/>
+              <input type="submit" class="button" name="custom" value="Custom"/>
+              <input type="submit" class="button" name="vêtements" value="Vêtements"/>
+              <input type="submit" class="button" name="magazine" value="Magazine"/>
+              <input type="submit" class="button" name="dédicace" value="Dédicace"/>
+              <input type="submit" class="button" name="matériel" value="Matériel"/>
             </div>
 
             <table class="table table-light exhibitors-table">
@@ -37,7 +40,6 @@
                   <th scope="col"></th>
                   <th scope="col" class="nom">Nom</th>
                   <th scope="col" class="categorie">Catégorie</th>
-                  <th scope="col" class="horaire">Horaire</th>
                   <th scope="col" class="id">Numéro de stand</th>
                 </tr>
               </thead>

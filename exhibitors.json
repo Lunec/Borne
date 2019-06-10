@@ -1,0 +1,37 @@
+{
+    "utilitaire": [
+      {
+        "nom": "accueil",
+        "numero": 1
+      },
+      {
+        "nom": "entrée",
+        "numero": 2
+      },
+      {
+        "nom": "cashboard",
+        "numero": 3
+      }
+    ],
+    "skate": [
+      {
+        "nom": "Skate Deluxe",
+        "numero": 4
+      }
+    ],
+    "custom": [
+
+    ],
+    "vêtements": [
+
+    ],
+    "magazine": [
+
+    ],
+    "dedicace": [
+
+    ],
+    "materiel": [
+
+    ]
+}
