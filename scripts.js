@@ -4,11 +4,8 @@ $(document).ready(function(){
         var ajaxurl = 'ajax.php',
         data =  {'action': clickBtnValue};
         $.post(ajaxurl, data, function (response) {
-            // Response div goes here.
-            console.log("ajax request successful: ");
+            document.getElementById('table-slot').innerHTML = response;
         });
     });
 
 });
-
-alert("ok");

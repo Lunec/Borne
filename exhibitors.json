@@ -1,37 +1,25 @@
 {
-    "utilitaire": [
-      {
-        "nom": "accueil",
-        "numero": 1
-      },
-      {
-        "nom": "entrée",
-        "numero": 2
-      },
-      {
-        "nom": "cashboard",
-        "numero": 3
-      }
-    ],
-    "skate": [
-      {
-        "nom": "Skate Deluxe",
-        "numero": 4
-      }
-    ],
-    "custom": [
+      "exposants": [
+        {
+          "nom": "Accueil",
+          "numero": 1,
+          "categorie": "Utilitaire"
+        },
 
-    ],
-    "vêtements": [
-
-    ],
-    "magazine": [
-
-    ],
-    "dedicace": [
-
-    ],
-    "materiel": [
-
+        {
+          "nom": "Entrée",
+          "numero": 2,
+          "categorie": "Utilitaire"
+        },
+        {
+          "nom": "Cashboard",
+          "numero": 3,
+          "categorie": "Utilitaire"
+        },
+        {
+          "nom": "Skate Deluxe",
+          "numero": 4,
+          "categorie": "Skate"
+        }
     ]
 }

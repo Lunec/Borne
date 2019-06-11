@@ -1,35 +1,56 @@
 <?php
 
-  function getCategoryArray($category) {
+  function decodeJSONFile() {
     $jsonData = file_get_contents("exhibitors.json");
     $exhibitors = json_decode($jsonData, true);
 
-    return $exhibitors[$category];
+    return $exhibitors;
   }
 
-  function makeExhibitorsTable($category) {
-    $exhibitors = getCategoryArray($category);
+  function retrieveArrayToDisplay($category = null) { // Returns a clean array to display
+    $exposants = decodeJSONFile();
 
-    $table = '<table class="table table-light exhibitors-table">
-                  <thead>
-                    <tr>
-                      <th scope="col"></th>
-                      <th scope="col" class="nom">Nom</th>
-                      <th scope="col" class="categorie">Catégorie</th>
-                      <th scope="col" class="id">Numéro de stand</th>
-                    </tr>
-                  </thead>
-                  <tbody>';
-
-    foreach($exhibitors[$category] as $exhibitor) {
-      $table .= '<tr><td scope="row"></td>';
-      foreach ($exhibitor as $data) {
-        $table .= "<td>" . $data . "</td>";
+    $exposantsToShow = [];
+    if($category == "Tout") {
+      foreach ($exposants["exposants"] as $exposant) {
+        $exposantsToShow[] = $exposant;
       }
-      $table .= "</tr>";
+
+    } else {
+      foreach ($exposants["exposants"] as $exposant) {
+        if($exposant['categorie'] == $category) {
+          $exposantsToShow[] = $exposant;
+        }
+      }
     }
-    $table .= '<table>';
+
+    return $exposantsToShow;
+  }
+
+  function makeExhibitorsTable($category = null) { // Makes an html table from array
+
+    $exposants = retrieveArrayToDisplay($category);
+
+    $table = '<table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">Numéro<br/>de stand</th>
+                    <th scope="col">Nom</th>
+                    <th scope="col">Catégorie</th>
+                  </tr>
+                </thead>
+                <tbody>';
+
+    foreach ($exposants as $exposant) {
+      $table .= '<tr>';
+      foreach ($exposant as $field) {
+        $table .= '<td>' . $field . '</td>';
+      }
+      $table .= '</tr>';
+    }
+    $table .= '</table>';
     echo $table;
+
   }
 
 ?>

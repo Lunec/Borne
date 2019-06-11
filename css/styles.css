@@ -68,18 +68,9 @@ html {
   margin-left: 1rem;
 }
 
-.filters-container .filter a {
+.filters-container .button {
   font-size: 1.6rem;
-  color: #000;
-  border: 1px solid #000;
   padding: 0.8rem 2rem;
-  transition: all .3s
-}
-
-.filters-container .filter a:hover {
-  text-decoration: none;
-  background-color: #000;
-  color: #fff;
 }
 
 .exhibitors-table {
