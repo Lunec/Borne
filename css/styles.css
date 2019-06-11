@@ -52,25 +52,10 @@ html {
   box-shadow: 2px 2px 3px 0 orange;
 }
 
-.filters-container ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  margin-top: 3rem;
-  padding: 0;
-}
-
-.filters-container #first-filter {
-  margin: 0;
-}
-
-.filters-container .filter {
-  margin-left: 1rem;
-}
-
-.filters-container .button {
+.content-container .filters-container {
   font-size: 1.6rem;
-  padding: 0.8rem 2rem;
+  margin: 1rem 0;
+  background: transparent;
 }
 
 .exhibitors-table {

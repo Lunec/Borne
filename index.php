@@ -18,12 +18,15 @@
 
           <div class="col-lg-5 content-container">
             <div class="search-bar">
-              <input type="text" class="form-control" placeholder="Rechercher..."/>
+              <input type="text" id="search" class="form-control" placeholder="Rechercher..."/>
               <button class="btn btn-submit" type="submit">Rechercher</button>
             </div>
 
+            <div id="search-display">
+            </div>
+
             <div class="filters-container">
-              <span>Filtrer par :<span>
+              <span>Filtrer par :</span>
               <input type="submit" class="button" name="tout" value="Tout"/>
               <input type="submit" class="button" name="utilitaire" value="Utilitaire"/>
               <input type="submit" class="button" name="skate" value="Skate"/>
