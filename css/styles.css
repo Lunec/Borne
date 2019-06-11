@@ -18,9 +18,15 @@ html {
     box-sizing: border-box;
 }
 
+body {
+  font-family: "Montserrat";
+}
+
 .map-container {
   background-color: #fff;
   border: 3px solid #eee;
+  min-height: 90vh;
+  margin: 0;
 }
 
 .content-container {
@@ -52,10 +58,10 @@ html {
   box-shadow: 2px 2px 3px 0 orange;
 }
 
-.content-container .filters-container {
+.filters-container {
   font-size: 1.6rem;
   margin: 1rem 0;
-  background: transparent;
+  padding: .5rem 1rem .5rem 0rem;
 }
 
 .exhibitors-table {
@@ -64,4 +70,61 @@ html {
 
 .exhibitors-table th, .exhibitors-table td {
   font-size: 1.6rem;
+}
+
+#search-display span {
+  font-size: 1.6rem;
+}
+
+.label-filters {
+  font-size: 1.6rem;
+  margin-right: 1rem;
+}
+
+.navigation-bar {
+  margin: 0;
+  padding: 1rem 0;
+  background: #000;
+  width: 100%;
+  height: 10vh;
+  max-height: 10vh;
+  display: flex;
+  align-items: center;
+}
+
+.navigation-bar a {
+  color: #fff;
+  width: 100%;
+  font-size: 2rem;
+  text-decoration: none;
+  font-family: "Redhat";
+  text-align: center;
+}
+
+.navigation-bar a span {
+  color: #fff;
+}
+
+.carousel {
+  max-height: 90vh;
+  overflow: hidden;
+}
+
+.carousel-caption {
+  margin-bottom: 35rem;
+}
+
+.carousel-caption h5 {
+  font-family: "Blacklisted";
+  font-size: 3rem;
+}
+
+.carousel-caption p {
+  font-family: "Montserrat";
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.map-content-container {
+
 }

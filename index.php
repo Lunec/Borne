@@ -11,7 +11,7 @@
     </head>
     <body>
       <div class="container-fluid">
-        <div class="row">
+        <div class="row map-content-container">
           <div class="col-lg-7 map-container">
             <img src="images/plan_colors.png" class="img-fluid map"/>
           </div>
@@ -19,33 +19,30 @@
           <div class="col-lg-5 content-container">
             <div class="search-bar">
               <input type="text" id="search" class="form-control" placeholder="Rechercher..."/>
-              <button class="btn btn-submit" type="submit">Rechercher</button>
             </div>
 
             <div id="search-display">
             </div>
-
-            <div class="filters-container">
-              <span>Filtrer par :</span>
-              <input type="submit" class="button" name="tout" value="Tout"/>
-              <input type="submit" class="button" name="utilitaire" value="Utilitaire"/>
-              <input type="submit" class="button" name="skate" value="Skate"/>
-              <input type="submit" class="button" name="custom" value="Custom"/>
-              <input type="submit" class="button" name="vêtements" value="Vêtements"/>
-              <input type="submit" class="button" name="magazine" value="Magazine"/>
-              <input type="submit" class="button" name="dédicace" value="Dédicace"/>
-              <input type="submit" class="button" name="matériel" value="Matériel"/>
-            </div>
+            
+            <span class="label-filters">Trier par :</span>
+            <select class="filters-container">
+              <option type="submit" class="button" name="tout" value="Tout">Tout</option>
+              <option type="submit" class="button" name="utilitaire" value="Utilitaire">Utilitaire</option>
+              <option type="submit" class="button" name="skate" value="Skate">Skate</option>
+              <option type="submit" class="button" name="custom" value="Custom">Custom</option>
+              <option type="submit" class="button" name="vêtements" value="Vêtements">Vêtements</option>
+              <option type="submit" class="button" name="magazine" value="Magazine">Magazine</option>
+              <option type="submit" class="button" name="dédicace" value="Dédicace">Dédicace</option>
+              <option type="submit" class="button" name="matériel" value="Matériel">Matériel</option>
+            </select>
 
             <div id="table-slot">
             </div>
 
           </div>
-        </div>
 
-        <div class="row">
-          <div class="col-md-12">
-            <a href="#" id="to-news-button">-></a>
+          <div class="col-md-12 navigation-bar">
+            <a href="news.html" id="to-news-button"><span>Actus</span> &#8594;</a>
           </div>
         </div>
       </div>

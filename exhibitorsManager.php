@@ -34,8 +34,8 @@
     $table = '<table class="table table-striped exhibitors-table">
                 <thead>
                   <tr>
-                    <th scope="col">Numéro<br/>de stand</th>
                     <th scope="col">Nom</th>
+                    <th scope="col">Numéro</th>
                     <th scope="col">Catégorie</th>
                   </tr>
                 </thead>
@@ -55,11 +55,22 @@
 
   function lookForExposant($nom) {
     $exposants = decodeJSONFile();
+    $isFound = false;
+    
     foreach($exposants["exposants"] as $exposant) {
       if ($exposant["nom"] == $nom) {
-        echo $nom;
+        $isFound = true;
+        $numero = $exposant["numero"];
       }
     }
+
+    if (!$isFound) {
+      echo "<span>" . $nom . " n'est pas un exposant.</span>";
+    } else {
+      echo "<span>$nom - numéro de stand : $numero</span>";
+    }
+
   }
+
 
 ?>
