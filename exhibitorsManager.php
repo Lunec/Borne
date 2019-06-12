@@ -31,7 +31,7 @@
 
     $exposants = retrieveArrayToDisplay($category);
 
-    $table = '<table class="table table-striped exhibitors-table">
+    $table = '<table class="table exhibitors-table">
                 <thead>
                   <tr>
                     <th scope="col">Nom</th>
@@ -56,7 +56,7 @@
   function lookForExposant($nom) {
     $exposants = decodeJSONFile();
     $isFound = false;
-    
+
     foreach($exposants["exposants"] as $exposant) {
       if ($exposant["nom"] == $nom) {
         $isFound = true;
